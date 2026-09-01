@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const site = "https://dicasinteligentes.com";
+
+const sites = [
+  {
+    nome: "Casa Prática",
+    url: "https://casapratica.dicasinteligentes.com",
+    descricao: "Organização de casa por zona, sem gastar à toa — cozinha, banheiro e mais.",
+  },
+  {
+    nome: "Amigo Pet",
+    url: "https://amigopet.dicasinteligentes.com",
+    descricao: "Comparativos honestos de produto pra gato e cachorro.",
+  },
+  {
+    nome: "Bela Receita",
+    url: "https://belareceita.dicasinteligentes.com",
+    descricao: "Receitas fáceis e testadas, do dia a dia à ocasião especial.",
+  },
+  {
+    nome: "Café Ideal",
+    url: "https://cafe.dicasinteligentes.com",
+    descricao: "Cafeteira, moedor e mais — qual escolher, sem chute.",
+  },
+  {
+    nome: "Mundo Bebê",
+    url: "https://mundobebe.dicasinteligentes.com",
+    descricao: "Produto de bebê é decisão de segurança — comparativos com o defeito real de cada um.",
+  },
+];
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Dicas Inteligentes",
+  url: `${site}/`,
+  inLanguage: "pt-BR",
+  description: "Rede de sites de comparativos honestos de produto, sempre com preço em faixa e o defeito real de cada um.",
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Dicas Inteligentes",
+  url: `${site}/`,
+  description: "Rede de sites de comparativos e listas de produto — organização de casa, pet, receitas, café e bebê.",
+};
+---
+<Layout
+  title="Comparativos honestos, sem enrolação"
+  description="A rede Dicas Inteligentes pesquisa produto de verdade e nunca esconde o defeito — preço sempre em faixa, nota sempre real. Escolha seu assunto."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+
+  <section class="hero">
+    <p class="eyebrow">Dicas Inteligentes</p>
+    <h1>Comparativo honesto de produto, sem enrolação.</h1>
+    <p class="hero-texto">
+      Preço sempre em faixa, nunca fixo. Nota só quando é avaliação real.
+      E todo produto vem com o defeito que ninguém conta — pesquisado
+      direto nas avaliações de quem já comprou.
+    </p>
+  </section>
+
+  <section class="sites">
+    <h2>Escolha o assunto</h2>
+    <div class="sites-grade">
+      {sites.map((s) => (
+        <a class="site-card" href={s.url} rel="noopener">
+          <strong>{s.nome}</strong>
+          <span>{s.descricao}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="metodo">
+    <h2>Como trabalhamos</h2>
+    <p>
+      Todo site da rede segue a mesma regra, sem exceção: nenhum produto
+      entra numa lista sem um defeito real declarado, pesquisado em
+      avaliação de comprador de verdade — nunca inventado. Preço é sempre
+      faixa, porque preço muda; nota só aparece quando existe avaliação de
+      verdade por trás dela. Não é sobre recomendar o produto mais caro, é
+      sobre mostrar o que realmente vale saber antes de comprar.
+    </p>
+  </section>
+
+  <style>
+    .hero { padding: 3rem 0 2rem; text-align: center; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      color: var(--cor-acento);
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+    }
+    .hero h1 { font-size: 2rem; margin: 0 0 1rem; line-height: 1.25; }
+    .hero-texto {
+      max-width: 560px;
+      margin: 0 auto;
+      color: var(--cor-texto-suave);
+      font-size: 1.05rem;
+    }
+    .sites { margin: 2.5rem 0; }
+    .sites h2 { font-size: 1.2rem; margin: 0 0 1.25rem; text-align: center; }
+    .sites-grade {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .site-card {
+      display: block;
+      border: 1px solid var(--cor-borda);
+      border-radius: 12px;
+      padding: 1.25rem 1.4rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      background: var(--cor-superficie);
+      transition: border-color 0.15s;
+    }
+    .site-card:hover { border-color: var(--cor-acento); }
+    .site-card strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: var(--cor-acento);
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+    }
+    .site-card span { font-size: 0.9rem; color: var(--cor-texto-suave); }
+    .metodo {
+      margin: 3rem 0 2rem;
+      padding: 1.75rem;
+      background: var(--cor-escuro);
+      color: #f2f0ea;
+      border-radius: 14px;
+    }
+    .metodo h2 { margin: 0 0 0.75rem; color: #fff; font-size: 1.2rem; }
+    .metodo p { margin: 0; color: #d8d5cb; font-size: 0.95rem; }
+  </style>
+</Layout>

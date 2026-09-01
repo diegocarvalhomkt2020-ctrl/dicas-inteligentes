@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Sobre", item: "https://dicasinteligentes.com/sobre/" },
+  ],
+};
+---
+<Layout
+  title="Sobre a Dicas Inteligentes"
+  description="Como a rede Dicas Inteligentes pesquisa e escolhe cada produto recomendado — o método por trás dos comparativos."
+>
+  <p><a href="/">← Início</a></p>
+  <h1>Sobre a Dicas Inteligentes</h1>
+
+  <p>
+    Dicas Inteligentes é uma rede de sites de comparativo de produto — cada
+    um focado num assunto (casa, pet, receita, café, bebê), todos seguindo
+    o mesmo método de pesquisa. Existimos porque a maioria dos comparativos
+    de produto na internet só mostra nota 5 estrelas e nunca fala o que
+    pode dar errado.
+  </p>
+
+  <section class="bloco">
+    <h2>O que fazemos diferente</h2>
+    <p>
+      Todo produto recomendado é pesquisado de verdade — preço, nota e
+      avaliação vêm direto da página de venda ou de avaliação real de quem
+      já comprou. E todo produto vem com um "vale saber": o defeito real,
+      não um genérico tipo "não é perfeito pra todo mundo". Se um produto
+      tem reclamação real de rachar, vazar ou não durar, isso aparece na
+      recomendação — antes de você comprar, não depois.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>As regras que seguimos em todo site da rede</h2>
+    <ul>
+      <li><strong>Preço é sempre faixa, nunca fixo.</strong> Preço muda o tempo todo; fixar um valor é enganoso.</li>
+      <li><strong>Nota só aparece quando é real.</strong> Produto sem avaliação suficiente não ganha nota inventada — aparece como "ainda sem avaliações suficientes".</li>
+      <li><strong>Contra sempre específico.</strong> Nada de "pode não agradar a todos" — o defeito citado é o que apareceu de verdade em reclamação ou avaliação.</li>
+      <li><strong>Links de afiliado, declarados.</strong> Quando você compra por um link nosso, podemos receber comissão, sem custo extra pra você — isso é o que sustenta a pesquisa.</li>
+    </ul>
+  </section>
+
+  <section class="bloco">
+    <h2>Contato</h2>
+    <p>
+      Dúvida, sugestão ou correção em algum comparativo? Escreve pra
+      <a href="mailto:contato@dicasinteligentes.com">contato@dicasinteligentes.com</a>.
+    </p>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .bloco { margin: 2.25rem 0; }
+    .bloco h2 { font-size: 1.1rem; margin: 0 0 0.6rem; }
+    .bloco p { margin: 0; color: var(--cor-texto-suave); }
+    .bloco ul { margin: 0; padding-left: 1.2rem; color: var(--cor-texto-suave); }
+    .bloco li { margin-bottom: 0.6rem; }
+    .bloco li strong { color: var(--cor-texto); }
+  </style>
+</Layout>

@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Política de Privacidade", item: "https://dicasinteligentes.com/privacidade/" },
+  ],
+};
+---
+<Layout
+  title="Política de Privacidade"
+  description="Como a Dicas Inteligentes coleta, usa e protege os dados de quem visita o site."
+>
+  <p><a href="/">← Início</a></p>
+  <h1>Política de Privacidade</h1>
+  <p class="atualizado">Atualizado em setembro de 2026</p>
+
+  <section class="bloco">
+    <h2>Quem somos</h2>
+    <p>
+      A Dicas Inteligentes (dicasinteligentes.com) é o portal da rede de
+      sites de comparativo de produto (Casa Prática, Amigo Pet, Bela
+      Receita, Café Ideal, Mundo Bebê e outros que vierem a existir). Esta
+      página explica quais dados coletamos aqui, no portal — cada site da
+      rede também tem sua própria política.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>Quais dados coletamos</h2>
+    <p>
+      Usamos o Google Analytics pra entender como as pessoas usam o site:
+      quais páginas são mais visitadas e de onde vem o acesso. Dados
+      agregados, não identificam você pessoalmente. Usa cookies — você pode
+      bloquear nas configurações do navegador a qualquer momento.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>Links pra outros sites</h2>
+    <p>
+      Esta página existe principalmente pra te direcionar aos sites da
+      rede. Cada um deles participa de programas de afiliados (como Amazon
+      Associados) e tem sua própria política de privacidade.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>Seus direitos</h2>
+    <p>
+      De acordo com a LGPD, você pode solicitar informações sobre quais
+      dados temos sobre você, pedir correção ou exclusão, e retirar
+      consentimento a qualquer momento. Como não há cadastro neste site, a
+      forma mais direta é desativar cookies de análise no navegador.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>Contato</h2>
+    <p>
+      <a href="mailto:contato@dicasinteligentes.com">contato@dicasinteligentes.com</a>
+    </p>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .bloco { margin: 2rem 0; }
+    .bloco h2 { font-size: 1.1rem; margin: 0 0 0.6rem; }
+    .bloco p { margin: 0 0 0.75rem; color: var(--cor-texto-suave); }
+  </style>
+</Layout>
