@@ -8,7 +8,7 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%92%A1</text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><circle cx=%2216%22 cy=%2216%22 r=%223.4%22 fill=%22%23e8722c%22/><circle cx=%2216%22 cy=%225%22 r=%222.4%22 fill=%22%23e8722c%22/><circle cx=%2226.5%22 cy=%2211.5%22 r=%222.4%22 fill=%22%23e8722c%22/><circle cx=%2222.5%22 cy=%2224.5%22 r=%222.4%22 fill=%22%23e8722c%22/><circle cx=%229.5%22 cy=%2224.5%22 r=%222.4%22 fill=%22%23e8722c%22/><circle cx=%225.5%22 cy=%2211.5%22 r=%222.4%22 fill=%22%23e8722c%22/><line x1=%2216%22 y1=%2216%22 x2=%2216%22 y2=%225%22 stroke=%22%23e8722c%22 stroke-width=%221.6%22/><line x1=%2216%22 y1=%2216%22 x2=%2226.5%22 y2=%2211.5%22 stroke=%22%23e8722c%22 stroke-width=%221.6%22/><line x1=%2216%22 y1=%2216%22 x2=%2222.5%22 y2=%2224.5%22 stroke=%22%23e8722c%22 stroke-width=%221.6%22/><line x1=%2216%22 y1=%2216%22 x2=%229.5%22 y2=%2224.5%22 stroke=%22%23e8722c%22 stroke-width=%221.6%22/><line x1=%2216%22 y1=%2216%22 x2=%225.5%22 y2=%2211.5%22 stroke=%22%23e8722c%22 stroke-width=%221.6%22/></svg>" />
     <title>{title} | Dicas Inteligentes</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
@@ -27,11 +27,26 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imagemAbsoluta} />
 
-    <!-- TODO: Google tag (gtag.js) — colar o script real quando a propriedade GA4 for criada -->
+    <!-- TODO: Google tag (gtag.js): colar o script real quando a propriedade GA4 for criada -->
   </head>
   <body>
     <header class="topo">
-      <a href="/" class="marca">Dicas Inteligentes</a>
+      <a href="/" class="marca">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="3.4" fill="var(--cor-acento)"/>
+          <circle cx="16" cy="5" r="2.4" fill="var(--cor-acento)"/>
+          <circle cx="26.5" cy="11.5" r="2.4" fill="var(--cor-acento)"/>
+          <circle cx="22.5" cy="24.5" r="2.4" fill="var(--cor-acento)"/>
+          <circle cx="9.5" cy="24.5" r="2.4" fill="var(--cor-acento)"/>
+          <circle cx="5.5" cy="11.5" r="2.4" fill="var(--cor-acento)"/>
+          <line x1="16" y1="16" x2="16" y2="5" stroke="var(--cor-acento)" stroke-width="1.6"/>
+          <line x1="16" y1="16" x2="26.5" y2="11.5" stroke="var(--cor-acento)" stroke-width="1.6"/>
+          <line x1="16" y1="16" x2="22.5" y2="24.5" stroke="var(--cor-acento)" stroke-width="1.6"/>
+          <line x1="16" y1="16" x2="9.5" y2="24.5" stroke="var(--cor-acento)" stroke-width="1.6"/>
+          <line x1="16" y1="16" x2="5.5" y2="11.5" stroke="var(--cor-acento)" stroke-width="1.6"/>
+        </svg>
+        Dicas Inteligentes
+      </a>
       <nav>
         <a href="/">Início</a>
         <a href="/sobre/">Sobre</a>
@@ -42,7 +57,7 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
     </main>
     <footer class="rodape">
       <p class="rodape-marca">Dicas Inteligentes</p>
-      <p>Conteúdo real, testado e sem enrolação — sempre com o defeito honesto de cada produto, não só a nota 5 estrelas.</p>
+      <p>Conteúdo real, testado e sem enrolação. Sempre com o defeito honesto de cada produto, não só a nota 5 estrelas.</p>
       <p class="rodape-links"><a href="/sobre/">Sobre</a> · <a href="mailto:contato@dicasinteligentes.com">contato@dicasinteligentes.com</a> · <a href="/privacidade/">Política de Privacidade</a></p>
       <p class="rodape-copy">© {new Date().getFullYear()} Dicas Inteligentes</p>
     </footer>
@@ -50,12 +65,11 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
       :root {
         --cor-texto: #262521;
         --cor-texto-suave: #6b6a63;
-        --cor-fundo: #fbfaf6;
+        --cor-fundo: #fdf3e7;
         --cor-superficie: #ffffff;
-        --cor-borda: #e4e1d6;
-        --cor-acento: #c9702f;
-        --cor-vale-saber: #2f6b5e;
-        --cor-escuro: #23282f;
+        --cor-borda: #ecdfcc;
+        --cor-acento: #e8722c;
+        --cor-escuro: #1c2128;
       }
       * { box-sizing: border-box; }
       body {
@@ -65,7 +79,7 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
         background: var(--cor-fundo);
         line-height: 1.6;
       }
-      h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
+      h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
       a { color: var(--cor-acento); }
       a:hover { text-decoration-thickness: 2px; }
       .topo {
@@ -76,7 +90,7 @@ const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Ast
         border-bottom: 1px solid var(--cor-borda);
         background: var(--cor-superficie);
       }
-      .marca { font-weight: 700; text-decoration: none; color: var(--cor-texto); font-family: Georgia, serif; }
+      .marca { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; text-decoration: none; color: var(--cor-texto); font-family: Georgia, serif; }
       .topo nav a { color: var(--cor-texto); text-decoration: none; margin-left: 1.5rem; }
       main { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
       .rodape {
