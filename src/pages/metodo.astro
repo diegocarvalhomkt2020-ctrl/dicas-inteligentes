@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Método", item: "https://dicasinteligentes.com/metodo/" },
+  ],
+};
+---
+<Layout
+  title="Como pesquisamos cada produto"
+  description="O passo a passo real por trás de todo comparativo da rede Dicas Inteligentes: de onde vem o preço, a nota e o defeito de cada produto."
+>
+  <p><a href="/">← Início</a></p>
+  <h1>Como pesquisamos cada produto</h1>
+
+  <p>
+    Isso aqui não é um resumo de marketing, é o passo a passo real de como
+    um produto entra (ou não entra) num comparativo da rede. Publicamos
+    porque achamos justo você saber de onde vem cada número antes de
+    confiar nele.
+  </p>
+
+  <section class="bloco">
+    <h2>1. O preço vem da página de venda, sempre em faixa</h2>
+    <p>
+      Nenhum preço é digitado de memória ou copiado de uma lista antiga.
+      Cada preço vem direto da página do produto na Amazon, no momento da
+      pesquisa. Como o valor sobe e desce com frequência (promoção,
+      variação de vendedor, cupom), guardamos como faixa (`precoMin` a
+      `precoMax`), nunca como número fixo. Um produto que aparece com preço
+      fixo em algum comparativo da rede é bug, não é intenção, e pode ser
+      reportado pelo <a href="/sobre/#contato">contato</a>.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>2. A nota é a nota real do produto, ou não aparece</h2>
+    <p>
+      Nota e número de avaliações vêm direto da página do produto. Quando
+      um produto ainda não tem avaliação suficiente pra confiar na nota
+      (poucas avaliações, produto recém-listado), isso aparece de forma
+      explícita no comparativo em vez de mostrar um número que não
+      significa nada ainda. Nenhuma nota é arredondada pra cima, inventada
+      ou "estimada".
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>3. O defeito vem de quem já comprou, não de achismo</h2>
+    <p>
+      Essa é a parte que mais demora e a que mais diferencia a rede de um
+      comparativo comum. Pra cada produto, lemos as avaliações reais de
+      quem comprou, procurando reclamação específica e recorrente: peça que
+      quebra, vazamento, tamanho diferente do anunciado, dificuldade de
+      montagem, recall registrado. Quando mais de um comprador relata o
+      mesmo problema, isso vira o "vale saber" daquele produto. Produto sem
+      nenhum defeito real relatado não ganha um defeito inventado só pra
+      parecer "equilibrado": aparece com a ressalva que existir de fato, e
+      só essa.
+    </p>
+  </section>
+
+  <section class="bloco">
+    <h2>4. Cada pilar tem 4 páginas, com função diferente</h2>
+    <p>
+      Todo assunto comparado (por exemplo "cadeirinha para carro" ou
+      "cafeteira elétrica") vira um conjunto de 4 páginas, não uma lista
+      solta:
+    </p>
+    <ul>
+      <li><strong>Guia principal</strong> — visão geral com comparativo rápido de todos os produtos pesquisados.</li>
+      <li><strong>Erros comuns</strong> — os erros reais que aparecem nas avaliações de quem comprou errado, pra evitar antes de decidir.</li>
+      <li><strong>Por orçamento</strong> — os mesmos produtos separados por faixa de preço, com um parágrafo explicando o que muda de verdade entre uma faixa e outra (não só reordenar preço).</li>
+      <li><strong>Comparativo top 3</strong> — os 3 produtos mais avaliados lado a lado, com uma análise de qual deles serve melhor pra qual perfil de comprador.</li>
+    </ul>
+  </section>
+
+  <section class="bloco">
+    <h2>5. A voz é sempre direta, nunca de vendedor</h2>
+    <p>
+      Nenhum texto da rede usa clichê de venda ("imperdível", "não pode
+      ficar de fora") nem travessão, marca comum de texto gerado sem
+      revisão. A meta é escrever como quem já comprou o produto e está
+      contando pra um amigo o que valeu e o que não valeu a pena, com o
+      defeito incluído.
+    </p>
+  </section>
+
+  <p class="cta-final">
+    Quer entender as regras gerais da rede, não só o método de pesquisa?
+    <a href="/sobre/">Volte pra página Sobre →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .bloco { margin: 2.25rem 0; }
+    .bloco h2 { font-size: 1.1rem; margin: 0 0 0.6rem; }
+    .bloco p { margin: 0; color: var(--cor-texto-suave); }
+    .bloco ul { margin: 0.75rem 0 0; padding-left: 1.2rem; color: var(--cor-texto-suave); }
+    .bloco li { margin-bottom: 0.6rem; }
+    .bloco li strong { color: var(--cor-texto); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

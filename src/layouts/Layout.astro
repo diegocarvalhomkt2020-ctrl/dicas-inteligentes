@@ -57,6 +57,7 @@ const ehAtual = (href) => pathname === href || (href !== '/' && pathname.startsW
         <nav id="menu-principal">
           <a href="/" aria-current={ehAtual('/') ? 'page' : undefined}>Início</a>
           <a href="/sobre/" aria-current={ehAtual('/sobre/') ? 'page' : undefined}>Sobre</a>
+          <a href="/metodo/" aria-current={ehAtual('/metodo/') ? 'page' : undefined}>Método</a>
         </nav>
       </div>
     </header>
@@ -77,7 +78,7 @@ const ehAtual = (href) => pathname === href || (href !== '/' && pathname.startsW
     <footer class="rodape">
       <p class="rodape-marca">Dicas Inteligentes</p>
       <p>Conteúdo real, testado e sem enrolação. Sempre com o defeito honesto de cada produto, não só a nota 5 estrelas.</p>
-      <p class="rodape-links"><a href="/sobre/">Sobre</a> · <a href="mailto:contato@dicasinteligentes.com">contato@dicasinteligentes.com</a> · <a href="/privacidade/">Política de Privacidade</a></p>
+      <p class="rodape-links"><a href="/sobre/">Sobre</a> · <a href="/metodo/">Método</a> · <a href="mailto:contato@dicasinteligentes.com">contato@dicasinteligentes.com</a> · <a href="/privacidade/">Política de Privacidade</a></p>
       <p class="rodape-copy">© {new Date().getFullYear()} Dicas Inteligentes</p>
     </footer>
     <style is:global>
