@@ -4,6 +4,19 @@ import dados from '../../data/blog.json';
 
 const posts = [...dados.posts].sort((a, b) => b.dataPublicacao.localeCompare(a.dataPublicacao));
 
+const cores = {
+  'Educação de consumo': '#3a6ea5',
+  'Por trás do comparativo': '#e8722c',
+};
+const ordemCategorias = ['Educação de consumo', 'Por trás do comparativo'];
+const secoes = ordemCategorias
+  .filter((categoria) => posts.some((p) => p.categoria === categoria))
+  .map((categoria) => ({
+    categoria,
+    cor: cores[categoria] || '#e8722c',
+    posts: posts.filter((p) => p.categoria === categoria),
+  }));
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -28,30 +41,39 @@ const breadcrumbSchema = {
     <p class="em-breve">Ainda não tem post publicado aqui.</p>
   )}
 
-  <div class="grade">
-    {posts.map((p) => {
-      const corCategoria = p.categoria === 'Educação de consumo' ? '#3a6ea5' : '#e8722c';
-      return (
-        <a href={`/blog/${p.slug}/`} class="cartao" style={`--cor-categoria:${corCategoria}`}>
-          <div class="cartao-texto">
-            <span class="categoria">{p.categoria}</span>
-            <h2>{p.titulo}</h2>
-            <p>{p.resumo}</p>
-          </div>
-        </a>
-      );
-    })}
-  </div>
+  {secoes.map((secao) => (
+    <section class="secao" style={`--cor-categoria:${secao.cor}`}>
+      <h2>{secao.categoria}</h2>
+      <div class="grade">
+        {secao.posts.map((p) => (
+          <a href={`/blog/${p.slug}/`} class="cartao">
+            <div class="cartao-texto">
+              <h3>{p.titulo}</h3>
+              <p>{p.resumo}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
 
   <style>
     .trilha { font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 1rem; }
     .trilha a { color: var(--cor-texto-suave); }
     .em-breve { color: var(--cor-texto-suave); }
+    .secao { margin-top: 2.5rem; }
+    .secao h2 {
+      font-size: 1.1rem;
+      font-family: Georgia, serif;
+      color: var(--cor-categoria);
+      margin: 0 0 1.1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--cor-categoria);
+    }
     .grade {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 1.25rem;
-      margin-top: 2rem;
     }
     .cartao {
       display: block;
@@ -59,20 +81,10 @@ const breadcrumbSchema = {
       color: var(--cor-texto);
       background: var(--cor-superficie);
       border: 1px solid var(--cor-borda);
-      border-top: 3px solid var(--cor-categoria);
-      border-radius: 10px 10px 14px 14px;
+      border-radius: 14px;
       padding: 1.25rem 1.4rem;
     }
-    .cartao-texto .categoria {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--cor-categoria);
-      margin-bottom: 0.5rem;
-    }
-    .cartao h2 { font-size: 1.05rem; margin: 0 0 0.5rem; font-family: Georgia, serif; }
+    .cartao h3 { font-size: 1.05rem; margin: 0 0 0.5rem; font-family: Georgia, serif; }
     .cartao p { font-size: 0.88rem; color: var(--cor-texto-suave); margin: 0; }
   </style>
 </Layout>
