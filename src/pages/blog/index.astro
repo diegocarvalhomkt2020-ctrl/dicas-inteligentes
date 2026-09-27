@@ -29,15 +29,18 @@ const breadcrumbSchema = {
   )}
 
   <div class="grade">
-    {posts.map((p) => (
-      <a href={`/blog/${p.slug}/`} class="cartao">
-        <div class="cartao-texto">
-          <span class="categoria">{p.categoria}</span>
-          <h2>{p.titulo}</h2>
-          <p>{p.resumo}</p>
-        </div>
-      </a>
-    ))}
+    {posts.map((p) => {
+      const corCategoria = p.categoria === 'Educação de consumo' ? '#3a6ea5' : '#e8722c';
+      return (
+        <a href={`/blog/${p.slug}/`} class="cartao" style={`--cor-categoria:${corCategoria}`}>
+          <div class="cartao-texto">
+            <span class="categoria">{p.categoria}</span>
+            <h2>{p.titulo}</h2>
+            <p>{p.resumo}</p>
+          </div>
+        </a>
+      );
+    })}
   </div>
 
   <style>
@@ -56,7 +59,8 @@ const breadcrumbSchema = {
       color: var(--cor-texto);
       background: var(--cor-superficie);
       border: 1px solid var(--cor-borda);
-      border-radius: 14px;
+      border-top: 3px solid var(--cor-categoria);
+      border-radius: 10px 10px 14px 14px;
       padding: 1.25rem 1.4rem;
     }
     .cartao-texto .categoria {
@@ -65,7 +69,7 @@ const breadcrumbSchema = {
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      color: var(--cor-acento);
+      color: var(--cor-categoria);
       margin-bottom: 0.5rem;
     }
     .cartao h2 { font-size: 1.05rem; margin: 0 0 0.5rem; font-family: Georgia, serif; }

@@ -10,6 +10,7 @@ export function getStaticPaths() {
 }
 
 const { post: p } = Astro.props;
+const corCategoria = p.categoria === 'Educação de consumo' ? '#3a6ea5' : '#e8722c';
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -49,7 +50,7 @@ const faqSchema = p.faq && p.faq.length > 0 ? {
     <a href="/">Início</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; {p.titulo}
   </nav>
 
-  <span class="categoria">{p.categoria}</span>
+  <span class="categoria" style={`color:${corCategoria}`}>{p.categoria}</span>
   <h1>{p.titulo}</h1>
   <p class="atualizado">Publicado em {new Date(p.dataPublicacao + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
 
