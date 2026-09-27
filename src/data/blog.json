@@ -1,0 +1,739 @@
+{
+  "posts": [
+    {
+      "slug": "como-identificar-avaliacao-falsa-na-amazon",
+      "categoria": "Educação de consumo",
+      "titulo": "Como identificar avaliação falsa",
+      "resumo": "Sinais reais de avaliação comprada ou manipulada, e por que nota alta sozinha não garante nada sobre o produto.",
+      "dataPublicacao": "2026-09-30",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Avaliação falsa não é boato: existe um mercado inteiro de venda de avaliação 5 estrelas, e isso infla a nota de produto que na prática decepciona. Antes de confiar só no número, vale olhar o padrão por trás dele."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Sinais de avaliação manipulada"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Muitas avaliações de 5 estrelas concentradas num período curto, sem nenhuma avaliação intermediária espalhada ao longo do tempo",
+            "Texto genérico, sem detalhe específico do produto (\"ótimo, chegou rápido, recomendo\") repetido de um jeito parecido em várias avaliações",
+            "Conta que só tem uma avaliação, feita justamente naquele produto, sem nenhum outro histórico de compra",
+            "Avaliação com foto igual ou muito parecida com a foto oficial do produto, em vez de foto real de uso"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que olhar em vez da nota isolada"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Distribuição de estrelas conta mais que a média: produto com nota 4.7 mas com 15% de avaliações de 1 estrela concentradas na mesma reclamação é sinal de defeito real recorrente, mesmo com nota alta no geral. Avaliação de 2 ou 3 estrelas, com texto específico, costuma ser mais confiável que a de 5 estrelas genérica: quem teve um problema real tende a detalhar o que aconteceu."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Volume também importa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Nota 5.0 com 8 avaliações vale muito menos que nota 4.6 com 3 mil avaliações. Poucas avaliações ainda não mostraram o produto em uso de verdade por gente suficiente pra revelar um defeito que só aparece depois de um tempo de uso."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Produto com poucas avaliações é sempre ruim?",
+          "resposta": "Não necessariamente, só significa que ainda não dá pra confiar tanto na nota. Pode ser um produto novo e bom, mas o risco de não saber é maior."
+        },
+        {
+          "pergunta": "Nota 5 estrelas cheia é sempre suspeita?",
+          "resposta": "Não sempre, mas vale desconfiar quando não existe nenhuma avaliação de 3 ou 4 estrelas no meio, porque isso é incomum num produto real com uso variado."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Todo comparativo mostra a nota real e o defeito que apareceu nas avaliações."
+        },
+        {
+          "nome": "Mundo Bebê",
+          "url": "https://mundobebe.dicasinteligentes.com",
+          "cor": "#4f7d8c",
+          "descricao": "Produto de bebê passa por checagem extra antes de entrar na lista."
+        }
+      ]
+    },
+    {
+      "slug": "preco-de-por-e-sempre-verdade-como-conferir",
+      "categoria": "Educação de consumo",
+      "titulo": "Preço \"de/por\": como conferir se é real",
+      "resumo": "Como saber se o desconto anunciado é real ou se o preço \"de\" foi inflado só pra parecer promoção maior do que é.",
+      "dataPublicacao": "2026-10-03",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Preço riscado seguido de um preço \"por\" menor é o gatilho de promoção mais usado no e-commerce, e nem sempre reflete um desconto real. Às vezes o preço \"de\" nunca foi praticado de verdade, só existe pra fazer o \"por\" parecer mais vantajoso."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como conferir o histórico real"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Ferramentas de histórico de preço (existem extensões de navegador gratuitas pra isso) mostram o preço do mesmo produto ao longo dos últimos meses. Se o preço \"de\" nunca apareceu no histórico, ou só apareceu por um dia isolado, a promoção provavelmente é maquiada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Datas com desconto \"garantido\" merecem atenção redobrada"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Black Friday: é comum o preço subir dias antes só pra \"descer\" de volta ao normal no dia do evento",
+            "Liquidação de fim de estação: confira se o preço já não estava naquele patamar semanas antes",
+            "Datas comemorativas (Dia das Mães, Natal): o mesmo produto costuma repetir o padrão ano após ano"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Preço em faixa, não preço fixo, é o que a rede sempre mostra"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "É por isso que todo comparativo da rede mostra o preço como faixa (mínimo a máximo observado), nunca um valor fixo: preço de produto online muda o tempo todo, com ou sem promoção declarada. Um preço fixo published como se fosse eterno é, na prática, uma informação que já nasce desatualizada."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Toda promoção com preço riscado é falsa?",
+          "resposta": "Não, muitas são reais. O problema é que não dá pra saber sem conferir o histórico, porque promoção maquiada e real usam exatamente o mesmo formato visual."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Café Ideal",
+          "url": "https://cafe.dicasinteligentes.com",
+          "cor": "#6f4423",
+          "descricao": "Preço sempre em faixa, atualizado na pesquisa, nunca um valor fixo antigo."
+        }
+      ]
+    },
+    {
+      "slug": "nota-5-estrelas-nao-significa-nada-sozinha",
+      "categoria": "Educação de consumo",
+      "titulo": "Nota 5 estrelas não conta a história toda",
+      "resumo": "Por que a nota isolada de um produto engana mais do que ajuda, e o que olhar junto com ela antes de decidir.",
+      "dataPublicacao": "2026-10-06",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Nota é a informação mais rápida de olhar e a mais fácil de mal interpretar. Um produto pode ter nota alta e ainda assim não servir pra você, porque a nota mistura gente com necessidade e expectativa completamente diferentes da sua."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que a nota não conta"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Quantas pessoas avaliaram: nota 5.0 com 30 avaliações é estatisticamente menos confiável que nota 4.6 com 3 mil",
+            "Quando as avaliações foram feitas: produto pode ter mudado de fornecedor ou de qualidade depois de um lote ruim",
+            "Se o defeito citado importa pro seu uso: um defeito de estética pesa nota pra quem se importa com aparência, mas pode ser irrelevante pra você"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Leia pelo menos 3 avaliações de cada extremo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma de 5 estrelas, uma de 3 e uma de 1, sempre que existirem. É aí que aparece o padrão real: se as reclamações de 1 estrela são todas sobre o mesmo problema específico, isso é um sinal mais forte do que qualquer nota média."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "É por isso que todo comparativo da rede tem uma seção de \"vale saber\""
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Nota sozinha nunca aparece num comparativo da rede sem o contra ao lado. A ideia é justamente essa: nota alta com defeito relatado junto é uma informação completa, nota alta sozinha é só parte da história."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Casa Prática",
+          "url": "https://casapratica.dicasinteligentes.com",
+          "cor": "#0f6e56",
+          "descricao": "Todo produto tem nota, avaliações e o defeito real lado a lado."
+        }
+      ]
+    },
+    {
+      "slug": "cupom-e-desconto-quando-e-vantagem-real",
+      "categoria": "Educação de consumo",
+      "titulo": "Cupom e desconto: quando vale a pena",
+      "resumo": "Cupom de desconto pode ser vantagem de verdade ou só um empurrão pra comprar algo que você não precisava. Como diferenciar.",
+      "dataPublicacao": "2026-10-09",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Cupom funciona porque muda a sensação de urgência: \"expira em 2 horas\" faz a decisão parecer mais urgente do que realmente é. Vale separar o desconto de verdade da pressão criada só pra acelerar a compra."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Perguntas antes de usar um cupom"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Eu compraria esse produto sem o cupom, no preço cheio? Se a resposta é não, o cupom está criando uma compra que não existia",
+            "O preço com cupom ainda é melhor que o de outro vendedor sem cupom nenhum? Às vezes o preço \"base\" já está inflado pra caber o desconto",
+            "O cupom é de valor fixo (R$20 de desconto) ou percentual (10% off)? Em compra pequena, cupom fixo pode não compensar o frete mínimo exigido pra usá-lo"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cupom que exige valor mínimo de compra"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "\"Ganhe R$30 de desconto em compras acima de R$150\" só é vantagem se você já ia gastar os R$150 de qualquer forma. Se você compra R$80 de produto e adiciona R$70 de coisa que não precisava só pra ativar o cupom, o desconto não compensou o gasto extra."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Contador regressivo nem sempre é real"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Alguns sites reiniciam o contador de tempo toda vez que a página é recarregada, o que significa que o prazo \"urgente\" nunca de fato termina. Se o mesmo cupom aparecer de novo depois que o contador chegou a zero, é sinal de que o prazo era só visual."
+        }
+      ],
+      "sitesRelacionados": []
+    },
+    {
+      "slug": "comprar-pelo-mais-barato-sai-mais-caro",
+      "categoria": "Educação de consumo",
+      "titulo": "Comprar pelo mais barato sai mais caro",
+      "resumo": "Como calcular o custo real de um produto (não só o preço na etiqueta) antes de escolher a opção mais barata da lista.",
+      "dataPublicacao": "2026-10-12",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O preço na etiqueta é só parte da conta. Produto que quebra rápido, que precisa de peça de reposição cara ou que gasta mais energia no uso diário pode custar bem mais no fim das contas do que a opção que parecia mais cara de início."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que entra no custo real"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Peça de reposição: filtro, refil, pilha específica. Confira o preço do refil antes de comprar o produto que depende dele",
+            "Vida útil esperada: um produto de R$100 que dura 1 ano custa mais por ano de uso que um de R$180 que dura 3 anos",
+            "Consumo de energia: eletrodoméstico mais barato às vezes gasta mais luz por mês, e essa diferença some rápido na conta de energia",
+            "Garantia e suporte: produto sem assistência técnica de fácil acesso pode virar lixo no primeiro defeito, mesmo pequeno"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Nem todo produto caro compensa esse cálculo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O oposto também é verdade: produto caro não garante durabilidade maior, então esse cálculo não é motivo pra sempre escolher o mais caro. É sobre juntar preço, durabilidade esperada e custo de manutenção antes de decidir, não sobre nenhum dos dois extremos sozinho."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Onde isso aparece nos nossos comparativos"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A página \"por orçamento\" de cada pilar da rede existe exatamente pra isso: mostrar o que muda de verdade entre uma faixa de preço e outra, não só reordenar por valor. Às vezes a diferença de preço é sobre durabilidade e recurso extra, às vezes não muda quase nada de relevante."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Café Ideal",
+          "url": "https://cafe.dicasinteligentes.com",
+          "cor": "#6f4423",
+          "descricao": "Equipamento de café tem peça de reposição e consumo que mudam o custo real."
+        }
+      ]
+    },
+    {
+      "slug": "frete-gratis-existe-de-verdade",
+      "categoria": "Educação de consumo",
+      "titulo": "Frete grátis existe de verdade?",
+      "resumo": "Como o custo do frete às vezes só muda de lugar, escondido dentro do preço do produto, em vez de desaparecer de verdade.",
+      "dataPublicacao": "2026-10-15",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Frete grátis é um dos gatilhos mais eficazes de venda online, mas o custo de transportar o produto não desaparece: alguém paga por ele. Às vezes é a loja absorvendo a margem, às vezes é o preço do produto levemente maior pra cobrir o frete \"grátis\"."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como perceber quando o frete está embutido"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Compare o mesmo produto, do mesmo vendedor, com e sem a opção de frete grátis (quando existe a escolha): se o preço muda, o frete não era realmente grátis",
+            "Compare o preço do produto com frete grátis contra o preço de um concorrente com frete pago: às vezes o total ainda sai mais barato no concorrente",
+            "Produto muito mais barato em uma loja sem frete grátis, e ligeiramente mais caro em outra com frete grátis, pode custar o mesmo no final"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Isso não significa que frete grátis é sempre ilusão"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Em compra de valor mais alto, ou quando a loja quer competir de verdade por preço final, o frete grátis costuma ser real. O ponto não é desconfiar de tudo, é sempre olhar o preço final entregue, não o preço do produto isolado."
+        }
+      ],
+      "sitesRelacionados": []
+    },
+    {
+      "slug": "o-que-checar-antes-de-comprar-pensando-na-troca",
+      "categoria": "Educação de consumo",
+      "titulo": "Compre pensando já na troca ou devolução",
+      "resumo": "Política de troca, prazo de arrependimento e o que confirmar antes de finalizar a compra, pra não ter dor de cabeça se o produto não servir.",
+      "dataPublicacao": "2026-10-18",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "A maioria das pessoas só lê a política de troca depois que já precisa dela, quando já é tarde pra negociar. Conferir antes de comprar evita a maior parte dos problemas."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que conferir antes de finalizar a compra"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Prazo de arrependimento: por lei, compra online no Brasil tem 7 dias corridos de direito de arrependimento a partir do recebimento, mesmo sem defeito",
+            "Quem paga o frete de devolução: em arrependimento, a loja não é obrigada a pagar, mas muitas oferecem isso como diferencial",
+            "Produto lacrado precisa ficar lacrado pra devolução? Alguns vendedores exigem embalagem intacta, outros aceitam produto testado",
+            "Prazo de garantia do fabricante, separado do prazo de arrependimento: geralmente é mais longo e cobre defeito, não arrependimento"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Guarde a embalagem e a nota fiscal até ter certeza"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Isso parece óbvio, mas é o motivo mais comum de gente perder o direito de troca: embalagem jogada fora no mesmo dia, sem testar o produto direito antes. Vale usar o produto o quanto antes dentro do prazo, pra sobrar tempo de agir se algo estiver errado."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "O direito de arrependimento de 7 dias vale pra qualquer compra online?",
+          "resposta": "Vale pra compra feita fora do estabelecimento físico, o que inclui a maioria das compras online no Brasil, contado a partir do recebimento do produto, não da data da compra."
+        }
+      ],
+      "sitesRelacionados": []
+    },
+    {
+      "slug": "produto-indicado-por-influenciador-e-publicidade",
+      "categoria": "Educação de consumo",
+      "titulo": "Indicação de influenciador é publicidade?",
+      "resumo": "Como saber se aquela recomendação que você viu nas redes sociais é uma opinião real ou um anúncio pago disfarçado.",
+      "dataPublicacao": "2026-10-21",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Nem toda indicação de influenciador é falsa, mas boa parte é publicidade paga, e isso muda completamente o peso que aquela opinião deveria ter na sua decisão de compra."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Sinais de que é publicidade"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Hashtag ou aviso de \"publi\", \"parceria paga\" ou \"ad\" (nem sempre em destaque, às vezes escondido no meio da legenda)",
+            "Link de afiliado ou cupom exclusivo com o nome do influenciador no código",
+            "Elogio genérico, sem nenhum contra mencionado, em um vídeo ou post inteiro sobre um produto só",
+            "O mesmo produto sendo divulgado por vários influenciadores diferentes na mesma semana, com discurso muito parecido"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Publicidade não significa produto ruim"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Um produto pode ser bom e ainda assim estar sendo divulgado com publicidade paga. O problema não é a publicidade em si (ela é legal e declarada corretamente na maioria dos casos), é tratar aquilo como se fosse uma opinião espontânea e imparcial quando não é."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como isso se diferencia do link de afiliado da rede"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A rede também usa link de afiliado, e isso é declarado abertamente na página Sobre: comprar por esse link pode gerar comissão, sem custo extra pra você. A diferença é que o comparativo sempre mostra o defeito real de cada produto, incluindo dos que a rede recomenda, o que não costuma acontecer numa publicidade paga tradicional."
+        }
+      ],
+      "sitesRelacionados": []
+    },
+    {
+      "slug": "preco-caro-nao-e-sinal-de-qualidade-o-que-aprendemos",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Preço caro não é sinal de qualidade",
+      "resumo": "Casos reais da nossa pesquisa onde o produto mais caro não teve a melhor nota, em categorias completamente diferentes.",
+      "dataPublicacao": "2026-10-24",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Depois de pesquisar produto em categorias bem diferentes (casa, pet, café, bebê), um padrão se repete: o produto mais caro de uma lista raramente é automaticamente o de melhor nota. Preço mais alto costuma vir de material premium, marca estabelecida ou recurso extra, não de qualidade superior garantida."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: balança de café"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Na nossa pesquisa de balança de café, a mais cara (HARIO, R$371 a R$469) tem nota 4,5. A mais barata do grupo com histórico robusto (Biscuitt, R$90 a R$155) tem nota 4,8, com 150 avaliações. A diferença de preço ali é sobre marca e função extra (a HARIO integra cronômetro), não sobre qual pesa café com mais precisão."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: comedouro automático pra pet"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Entre os comedouros automáticos que pesquisamos, o mais caro (elevado duplo, R$307 a R$419) tem nota 4,6. O mais barato do grupo (2 em 1 de água e ração, R$55 a R$65) também tem nota 4,6. Aqui, o preço mais alto está pagando por tamanho e formato elevado, não por uma nota melhor."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que isso muda na hora de comprar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Antes de pagar mais caro, vale perguntar o que exatamente esse valor extra compra: mais avaliação real por trás da nota, um recurso que você vai usar de verdade, ou só a percepção de que \"caro é sinônimo de bom\"? Nos comparativos da rede, isso fica explícito: preço e nota aparecem lado a lado, sem nenhum dos dois decidir sozinho qual é a melhor opção."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Café Ideal",
+          "url": "https://cafe.dicasinteligentes.com",
+          "cor": "#6f4423",
+          "descricao": "Veja o comparativo completo de balança de café, com preço e nota de cada uma."
+        },
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Comedouro automático comparado, com o defeito real de cada modelo."
+        }
+      ]
+    },
+    {
+      "slug": "por-que-quase-todo-produto-tem-um-defeito-real",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Por que quase todo produto tem um defeito",
+      "resumo": "Por que desconfiamos mais de um produto sem nenhum contra do que de um com um defeito específico bem descrito.",
+      "dataPublicacao": "2026-10-27",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Depois de pesquisar centenas de produtos pra rede, uma coisa ficou clara: produto perfeito, sem nenhum contra real, é raro. E quando aparece um produto \"sem defeito nenhum\" na pesquisa, isso costuma significar pouca avaliação disponível, não perfeição de verdade."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Volume de avaliação revela o defeito que só aparece com o tempo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Produto com centenas ou milhares de avaliações teve tempo e volume de uso suficiente pra revelar problema que só aparece depois de meses, tipo motor que enfraquece ou peça que desgasta. Produto com poucas avaliações simplesmente não teve esse tempo ainda, o que é diferente de não ter defeito nenhum."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Regra que seguimos em todo comparativo da rede"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Nunca inventamos um defeito genérico só pra parecer equilibrado (tipo \"pode não agradar a todos\"), mas também nunca escondemos um defeito real só porque o produto é o recomendado da lista. Se existir reclamação específica e recorrente, ela aparece, mesmo no produto que ganhou o selo de \"mais avaliado\"."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: trocador de fraldas"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O Alatino é o trocador de fraldas portátil mais avaliado que pesquisamos (quase 3,5 mil avaliações) e ainda assim tem um contra real registrado: uma avaliação de 3 estrelas relata caixa chegando com peça faltando. Isso não tira ele do topo da lista, mas é a informação que você merece ter antes de comprar, não depois."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Mundo Bebê",
+          "url": "https://mundobebe.dicasinteligentes.com",
+          "cor": "#4f7d8c",
+          "descricao": "Veja o comparativo de trocador de fraldas portátil completo."
+        }
+      ]
+    },
+    {
+      "slug": "bateria-wifi-motor-os-pontos-de-falha-que-se-repetem",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Bateria e Wi-Fi: as falhas que se repetem",
+      "resumo": "Os mesmos 3 tipos de defeito aparecem de novo e de novo em produto eletrônico, não importa a categoria.",
+      "dataPublicacao": "2026-10-30",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Comparando produto eletrônico em categorias bem diferentes (bebedouro de pet, comedouro automático, equipamento de café), os mesmos 3 pontos de falha aparecem repetidas vezes nas avaliações, quase como se fossem uma regra do tipo de produto, não da marca específica."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "1. Depender de bateria"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Todo produto sem fio que depende de bateria carrega o mesmo risco: se ela acaba, a função para. No nosso comparativo de bebedouro pra gato, a fonte sem fio portátil é a mais cara do grupo (R$153 a R$199) e é justamente ela que tem essa dependência: sem bateria, a bomba para e a água para de circular."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "2. Depender de Wi-Fi e aplicativo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Produto \"inteligente\" que promete controle por celular tem uma reclamação recorrente nas avaliações: se a internet de casa cair, ou o aplicativo tiver bug, a função inteligente para de funcionar. No comedouro automático com app que pesquisamos (R$179 a R$259), essa é exatamente a reclamação mais citada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "3. Motor ou bomba que enfraquece com o tempo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Esse é o defeito que só aparece depois de meses de uso, por isso só fica visível em produto com muita avaliação acumulada. É um lembrete de que produto muito novo no mercado, com poucas avaliações, simplesmente não teve tempo de revelar esse tipo de problema ainda."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que fazer com essa informação"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Não é motivo pra evitar todo produto com bateria ou Wi-Fi, é motivo pra decidir com os olhos abertos: se a dependência de bateria ou internet for um problema real pro seu uso (por exemplo, água pra pet nunca pode parar), talvez o modelo mais simples, sem essas dependências, sirva melhor, mesmo abrindo mão do recurso extra."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Bebedouro e comedouro automático, com o contra real de cada modelo."
+        }
+      ]
+    },
+    {
+      "slug": "produto-com-poucas-avaliacoes-vale-a-pena-arriscar",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Produto com poucas avaliações: arriscar?",
+      "resumo": "Como decidimos quando um produto novo, com pouco histórico, ainda merece entrar num comparativo da rede.",
+      "dataPublicacao": "2026-11-02",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Produto recém-lançado sempre começa com poucas avaliações, e isso cria um dilema real na hora de pesquisar: ignorar ele até acumular mais histórico, ou já considerar mesmo com risco maior de nota ainda não confiável?"
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: fonte de água pra gato"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "No nosso comparativo de bebedouro automático, uma das fontes pesquisadas tinha só 12 avaliações no momento da pesquisa, contra centenas ou milhares das concorrentes. Isso não a tirou da lista, mas o comparativo deixa isso explícito: \"pouco histórico, é um produto recente\", pra você decidir com essa informação em mãos, não escondida."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando vale considerar mesmo com pouco histórico"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Quando a marca já tem outros produtos com histórico bom em categoria parecida",
+            "Quando o preço é baixo o suficiente pra o risco de decepção ser pequeno",
+            "Quando não existe alternativa com histórico melhor que resolva a mesma necessidade específica"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando é melhor esperar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se o produto é caro, ou se envolve segurança (como no caso de produto de bebê, onde a rede sempre confere aprovação Inmetro e histórico de recall), esperar mais avaliação acumular costuma valer mais que economizar tempo. Nem todo produto novo merece o mesmo nível de risco."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Veja o comparativo de bebedouro automático completo, com o histórico de cada modelo."
+        }
+      ]
+    },
+    {
+      "slug": "mesma-faixa-de-preco-qualidade-diferente",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Mesma faixa de preço, qualidade diferente",
+      "resumo": "Como dois produtos quase no mesmo preço podem ter nota e confiabilidade bem distantes um do outro, na prática.",
+      "dataPublicacao": "2026-11-05",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Se preço caro não garante qualidade, o oposto também vale a pena olhar: dentro da mesma faixa de preço, dois produtos podem ter diferença grande de nota e de confiabilidade. Preço parecido não significa produto equivalente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: caixa de areia pra gato"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Comparando as caixas de areia que pesquisamos, uma na faixa de R$95 a R$143 tem nota 4,9 com 914 avaliações. Outra, bem mais barata (R$51 a R$54), tem nota 4,4, mesmo com mais avaliações acumuladas (1.400). E uma terceira, quase no mesmo preço da mais barata (R$54), tem nota bem mais baixa: 4,1, com só 45 avaliações. Preço parecido, resultado bem diferente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por que isso acontece"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Produto na mesma faixa de preço pode vir de fabricante diferente, com controle de qualidade diferente, mesmo parecendo semelhante na foto do anúncio. Formato, material e o cuidado no processo de fabricação pesam mais que a etiqueta de preço isolada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por isso a rede sempre compara lado a lado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "É exatamente esse tipo de diferença que a página \"comparativo top 3\" de cada pilar tenta mostrar: não é sobre reordenar por preço, é sobre mostrar qual dos produtos parecidos em preço realmente entrega mais confiabilidade, com o defeito de cada um declarado."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Comparativo de caixa de areia, com preço e nota lado a lado."
+        }
+      ]
+    },
+    {
+      "slug": "como-decidimos-o-comparativo-top-3",
+      "categoria": "Por trás do comparativo",
+      "titulo": "Como decidimos o Comparativo Top 3",
+      "resumo": "O critério real por trás de qual produto ganha o Top 3 de cada pilar, e por que não é simplesmente o mais vendido.",
+      "dataPublicacao": "2026-11-08",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Todo pilar da rede tem uma página de \"comparativo top 3\": os produtos mais avaliados daquela categoria, lado a lado. O critério de entrada é sempre o mesmo (número de avaliações), mas a análise de qual serve melhor pra qual pessoa é onde o trabalho de verdade acontece."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O critério de entrada é objetivo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Os 3 produtos com mais avaliações dentro da lista pesquisada entram no comparativo, sem exceção nem preferência por marca. É uma regra simples e verificável: mais avaliação significa mais gente testou de verdade, o que é o sinal mais confiável que existe pra confiar num produto."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "A análise não termina no número"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Depois de definir os 3, o comparativo explica qual serve melhor pra qual perfil, não qual é \"o melhor\" de forma genérica. No comparativo de transportadora de pet, por exemplo, o modelo mais avaliado é o mais barato, mas isso não significa que ele sirva melhor pra todo mundo: quem viaja de avião com o pet precisa de outro critério (tamanho aprovado por companhia aérea), não só nota e preço."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por que isso é diferente de \"mais vendido\""
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Mais vendido é uma métrica de venda, não de satisfação de quem já usou. Mais avaliado é uma métrica de gente que efetivamente usou o produto e voltou pra deixar uma opinião, o que costuma refletir melhor a experiência real de uso."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Amigo Pet",
+          "url": "https://amigopet.dicasinteligentes.com",
+          "cor": "#c8632c",
+          "descricao": "Veja o comparativo Top 3 de transportadora de pet, com a análise completa."
+        }
+      ]
+    },
+    {
+      "slug": "o-que-o-defeito-mais-comum-de-cada-categoria-revela",
+      "categoria": "Por trás do comparativo",
+      "titulo": "O que o defeito mais comum revela",
+      "resumo": "Cada categoria de produto tem um tipo de reclamação que se repete mais que as outras, e isso ensina o que checar antes de comprar.",
+      "dataPublicacao": "2026-11-11",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Depois de ler milhares de avaliações reais pesquisando produto pra rede, dá pra perceber que cada categoria tem um tipo de defeito que aparece com mais frequência que os outros, quase um padrão da própria categoria, não só do produto específico."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Móveis e organizadores: montagem e material"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A reclamação mais recorrente em produto de organização (prateleira, caixa, organizador) é sobre dificuldade de montagem ou material mais fino do que a foto sugere. Vale ler especificamente as avaliações que mencionam \"montagem\" antes de comprar esse tipo de produto."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Produto pra pet: durabilidade do material"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Em produto de uso diário e resistente (transportadora, arranhador, caminha), a reclamação mais comum é sobre desgaste mais rápido do que esperado, principalmente em pet de porte grande ou muito ativo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Equipamento de cozinha: precisão e consistência"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Em produto que promete medir ou controlar algo (balança, temporizador, termômetro), a reclamação mais comum é sobre a precisão variar de unidade pra unidade do mesmo modelo, não sobre o produto quebrar."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Produto de bebê: segurança em primeiro lugar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Aqui o padrão muda: a reclamação que mais importa não é sobre durabilidade ou estética, é sobre segurança (trava que falha, encaixe frouxo). É por isso que todo produto de bebê da rede passa por uma checagem extra de recall e certificação, além da nota e do preço."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Use isso a seu favor na próxima compra"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Antes de comprar qualquer coisa, pense em qual é o defeito mais provável pra aquele tipo específico de produto, e procure especificamente por ele nas avaliações, em vez de ler tudo sem foco nenhum."
+        }
+      ],
+      "sitesRelacionados": [
+        {
+          "nome": "Casa Prática",
+          "url": "https://casapratica.dicasinteligentes.com",
+          "cor": "#0f6e56",
+          "descricao": "Organização de casa, com o defeito real declarado em cada produto."
+        },
+        {
+          "nome": "Mundo Bebê",
+          "url": "https://mundobebe.dicasinteligentes.com",
+          "cor": "#4f7d8c",
+          "descricao": "Produto de bebê com checagem extra de segurança em cada comparativo."
+        }
+      ]
+    }
+  ]
+}

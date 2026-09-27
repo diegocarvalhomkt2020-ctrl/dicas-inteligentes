@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import dados from '../../data/blog.json';
+
+const posts = [...dados.posts].sort((a, b) => b.dataPublicacao.localeCompare(a.dataPublicacao));
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://dicasinteligentes.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dicasinteligentes.com/blog/" },
+  ],
+};
+---
+<Layout title="Blog" description="Como comprar com mais segurança e menos arrependimento: o que aprendemos pesquisando produto de verdade em 5 categorias diferentes.">
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <nav class="trilha"><a href="/">Início</a> &rsaquo; Blog</nav>
+
+  <h1>Blog</h1>
+  <p>
+    Educação de consumo e o que aprendemos pesquisando produto de verdade nas 5
+    categorias da rede, sem vender nada, só o que vale saber antes de comprar.
+  </p>
+
+  {posts.length === 0 && (
+    <p class="em-breve">Ainda não tem post publicado aqui.</p>
+  )}
+
+  <div class="grade">
+    {posts.map((p) => (
+      <a href={`/blog/${p.slug}/`} class="cartao">
+        <div class="cartao-texto">
+          <span class="categoria">{p.categoria}</span>
+          <h2>{p.titulo}</h2>
+          <p>{p.resumo}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <style>
+    .trilha { font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 1rem; }
+    .trilha a { color: var(--cor-texto-suave); }
+    .em-breve { color: var(--cor-texto-suave); }
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .cartao {
+      display: block;
+      text-decoration: none;
+      color: var(--cor-texto);
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: 14px;
+      padding: 1.25rem 1.4rem;
+    }
+    .cartao-texto .categoria {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--cor-acento);
+      margin-bottom: 0.5rem;
+    }
+    .cartao h2 { font-size: 1.05rem; margin: 0 0 0.5rem; font-family: Georgia, serif; }
+    .cartao p { font-size: 0.88rem; color: var(--cor-texto-suave); margin: 0; }
+  </style>
+</Layout>
