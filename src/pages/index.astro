@@ -1,5 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import blog from '../data/blog.json';
+
+// Posts com dado próprio da pesquisa, em destaque na home pra ajudar o Google a descobrir o blog.
+const slugsDestaque = [
+  'preco-caro-nao-e-sinal-de-qualidade-o-que-aprendemos',
+  'mesma-faixa-de-preco-qualidade-diferente',
+  'bateria-wifi-motor-os-pontos-de-falha-que-se-repetem',
+  'produto-com-poucas-avaliacoes-vale-a-pena-arriscar',
+];
+const destaques = slugsDestaque
+  .map((s) => blog.posts.find((p) => p.slug === s))
+  .filter(Boolean);
 
 const site = "https://dicasinteligentes.com";
 
@@ -101,6 +113,19 @@ const organizationSchema = {
     </div>
   </section>
 
+  <section class="blog-destaque">
+    <h2>No blog: o que aprendemos pesquisando</h2>
+    <div class="blog-grade">
+      {destaques.map((p) => (
+        <a class="blog-card" href={`/blog/${p.slug}/`}>
+          <strong>{p.titulo}</strong>
+          <span>{p.resumo}</span>
+        </a>
+      ))}
+    </div>
+    <p class="blog-todos"><a href="/blog/">Ver todos os posts do blog →</a></p>
+  </section>
+
   <section class="metodo">
     <h2>Como trabalhamos</h2>
     <p>
@@ -173,6 +198,24 @@ const organizationSchema = {
       font-size: 1.1rem;
     }
     .site-card span { font-size: 0.9rem; color: var(--cor-texto-suave); }
+    .blog-destaque { margin: 2.5rem 0 0; }
+    .blog-destaque h2 { font-size: 1.25rem; margin: 0 0 1.25rem; text-align: center; }
+    .blog-grade {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .blog-card {
+      display: block;
+      border: 1px solid var(--cor-borda);
+      border-radius: 14px;
+      padding: 1.1rem 1.25rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+    }
+    .blog-card strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .blog-card span { font-size: 0.88rem; color: var(--cor-texto-suave); }
+    .blog-todos { text-align: center; margin: 1.1rem 0 0; font-weight: 600; }
     .metodo {
       margin: 3rem 0 2rem;
       padding: 1.75rem;
