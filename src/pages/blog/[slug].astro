@@ -41,7 +41,7 @@ const faqSchema = p.faq && p.faq.length > 0 ? {
   })),
 } : null;
 ---
-<Layout title={p.titulo} description={p.resumo}>
+<Layout title={p.titulo} description={p.resumo} image={p.imagem}>
   <script type="application/ld+json" set:html={JSON.stringify(postSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -53,6 +53,8 @@ const faqSchema = p.faq && p.faq.length > 0 ? {
   <span class="categoria" style={`color:${corCategoria}`}>{p.categoria}</span>
   <h1>{p.titulo}</h1>
   <p class="atualizado">Publicado em {new Date(p.dataPublicacao + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+
+  {p.imagem && <img class="capa" src={p.imagem} alt={p.titulo} width="800" height="533" />}
 
   <div class="corpo">
     {p.corpo.map((bloco) => {
@@ -108,6 +110,7 @@ const faqSchema = p.faq && p.faq.length > 0 ? {
       margin-bottom: 0.5rem;
     }
     .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; margin-top: -0.5rem; }
+    .capa { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 14px; margin: 1.25rem 0 1.75rem; display: block; }
     .corpo p { margin: 0 0 1.1rem; }
     .corpo h2 { margin: 1.75rem 0 0.75rem; font-size: 1.25rem; font-family: Georgia, serif; }
     .corpo ul { padding-left: 1.2rem; margin: 0 0 1.1rem; }

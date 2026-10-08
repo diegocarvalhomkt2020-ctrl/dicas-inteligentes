@@ -47,6 +47,7 @@ const breadcrumbSchema = {
       <div class="grade">
         {secao.posts.map((p) => (
           <a href={`/blog/${p.slug}/`} class="cartao">
+            {p.imagem && <img src={p.imagem} alt={p.titulo} width="360" height="240" loading="lazy" />}
             <div class="cartao-texto">
               <h3>{p.titulo}</h3>
               <p>{p.resumo}</p>
@@ -82,8 +83,10 @@ const breadcrumbSchema = {
       background: var(--cor-superficie);
       border: 1px solid var(--cor-borda);
       border-radius: 14px;
-      padding: 1.25rem 1.4rem;
+      overflow: hidden;
     }
+    .cartao img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
+    .cartao-texto { padding: 1.25rem 1.4rem; }
     .cartao h3 { font-size: 1.05rem; margin: 0 0 0.5rem; font-family: Georgia, serif; }
     .cartao p { font-size: 0.88rem; color: var(--cor-texto-suave); margin: 0; }
   </style>
