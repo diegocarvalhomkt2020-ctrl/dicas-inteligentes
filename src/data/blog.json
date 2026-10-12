@@ -42,6 +42,18 @@
         },
         {
           "tipo": "subtitulo",
+          "texto": "Exemplo real: nota boa com uma avaliação ruim escondida"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Na nossa lista de moedores de café, o modelo compacto de 200 W, o mais barato (R$ 38 a R$ 48), tem nota 4,5, mas com só 25 avaliações. Lendo as avaliações de nota baixa, aparece um relato de superaquecimento e fumaça já no primeiro uso. A nota 4,5 sozinha não mostra isso, e com tão pouca gente avaliando, um único relato pesa muito."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Pra ver a diferença de tamanho: o Cadence Moedor di Grano (R$ 90 a R$ 105) tem 3.822 avaliações e nota 4,7. O contra que apareceu nele foi outro, que não dá pra lavar com água e que a moagem não serve pra espresso. Com mais gente avaliando, o padrão fica mais confiável. Por isso a gente lê as avaliações de 1 a 3 estrelas antes de colocar qualquer produto num comparativo."
+        },
+        {
+          "tipo": "subtitulo",
           "texto": "Avaliação verificada não é garantia total"
         },
         {
@@ -123,6 +135,10 @@
           "texto": "É por isso que todo comparativo da rede mostra o preço como faixa (mínimo a máximo observado), nunca um valor fixo: preço de produto online muda o tempo todo, com ou sem promoção declarada. Um preço fixo published como se fosse eterno é, na prática, uma informação que já nasce desatualizada."
         },
         {
+          "tipo": "paragrafo",
+          "texto": "Alguns exemplos reais mostram por quê. A cafeteira prensa francesa Mimo Style, a mais avaliada da nossa lista do Café Ideal, apareceu na pesquisa de R$ 23 a R$ 58 em uma versão e de R$ 26 a R$ 75 em outra. O suporte de mesa ELG, do Casa Prática, ficou entre R$ 19 e R$ 39. Quando o mesmo produto pode custar mais que o dobro de um dia pro outro, um preço riscado diz pouco, e a faixa mostra o que dá pra esperar de verdade."
+        },
+        {
           "tipo": "subtitulo",
           "texto": "Aplicativo de rastreio de preço em outros países"
         },
@@ -177,6 +193,18 @@
             "Quando as avaliações foram feitas: produto pode ter mudado de fornecedor ou de qualidade depois de um lote ruim",
             "Se o defeito citado importa pro seu uso: um defeito de estética pesa nota pra quem se importa com aparência, mas pode ser irrelevante pra você"
           ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Exemplo real: o que a nota 4,8 e a nota 4,6 escondem"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "No nosso comparativo de chaleiras do Café Ideal, a chaleira bico de ganso de 1 L com termômetro tem nota 4,8, mas com 118 avaliações. A Cadence Infusion tem nota 4,6, com 858 avaliações. A primeira nota vem de cerca de sete vezes menos gente, e o contra dela é outro: o termômetro é analógico, então você mesmo precisa desligar na hora certa. A nota mais alta não faz dela a melhor escolha pra todo mundo."
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O contrário também acontece. Na nossa lista de babás eletrônicas do Mundo Bebê, o modelo de uma marca bem conhecida, a Motorola VM482, tem a nota mais baixa da lista: 3,2, com 67 avaliações. Nome famoso não garante nota boa, e vale ler as avaliações recentes antes de confiar só na marca."
         },
         {
           "tipo": "subtitulo",
@@ -306,6 +334,22 @@
         },
         {
           "tipo": "subtitulo",
+          "texto": "Exemplos reais dos nossos comparativos"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Moedor de café: o modelo compacto de 200 W custa de R$ 38 a R$ 48, tem 25 avaliações e um relato de superaquecimento e fumaça já no primeiro uso. O Cadence Moedor di Grano custa de R$ 90 a R$ 105 e tem nota 4,7 com 3.822 avaliações. A diferença de uns R$ 50 compra muito mais histórico de uso.",
+            "Fonte de água pra gato: a fonte de inox com filtro (R$ 130 a R$ 160) traz um custo que não aparece no preço inicial, porque o filtro precisa ser trocado periodicamente.",
+            "Monitor de bebê com câmera: o modelo mais avaliado da lista (R$ 318 a R$ 378, com 16.600 avaliações) é de uma marca sem loja física nem suporte pós-venda formal no Brasil. Se der defeito, a garantia passa só pelo canal da Amazon."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Nenhum desses casos quer dizer que o mais barato é ruim. Quer dizer que o preço da etiqueta não mostra o histórico de uso, a reposição nem o suporte."
+        },
+        {
+          "tipo": "subtitulo",
           "texto": "Nem todo produto caro compensa esse cálculo"
         },
         {
@@ -421,6 +465,10 @@
             "Produto lacrado precisa ficar lacrado pra devolução? Alguns vendedores exigem embalagem intacta, outros aceitam produto testado",
             "Prazo de garantia do fabricante, separado do prazo de arrependimento: geralmente é mais longo e cobre defeito, não arrependimento"
           ]
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Fonte: o direito de arrependimento está no artigo 49 do Código de Defesa do Consumidor (Lei nº 8.078/1990) e vale para compras feitas fora do estabelecimento comercial, como as pela internet."
         },
         {
           "tipo": "subtitulo",
