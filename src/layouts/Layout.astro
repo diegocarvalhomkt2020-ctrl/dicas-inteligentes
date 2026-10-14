@@ -1,5 +1,5 @@
 ---
-const { title, description, image } = Astro.props;
+const { title, description, image, noindex } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imagemAbsoluta = new URL(image || '/images/og-dicas-inteligentes.png', Astro.site).toString();
 const pathname = Astro.url.pathname;
@@ -15,7 +15,7 @@ const ehAtual = (href) => pathname === href || (href !== '/' && pathname.startsW
     <title>{title} | Dicas Inteligentes</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
-    <!-- TODO: adicionar <meta name="google-site-verification"> quando o site for verificado no Search Console -->
+    {noindex && <meta name="robots" content="noindex" />}
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Dicas Inteligentes" />
