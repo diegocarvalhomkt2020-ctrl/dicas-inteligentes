@@ -1,0 +1,61 @@
+{
+  "geradoEm": "2026-11-02",
+  "receitas": 22,
+  "produtos": 143,
+  "comDefeitoDeclarado": 143,
+  "notaMedia": 4.58,
+  "notaMenor": 3.2,
+  "abaixoDe4": 2,
+  "de45ouMais": 104,
+  "avaliacoes": 329302,
+  "sites": [
+    {
+      "nome": "Casa Prática",
+      "url": "https://casapratica.dicasinteligentes.com",
+      "produtos": 56,
+      "comDefeitoDeclarado": 56,
+      "precoMenor": 16,
+      "precoMaior": 360,
+      "notaMedia": 4.58,
+      "notaMenor": 3.9,
+      "notaMaior": 4.9,
+      "avaliacoes": 108541
+    },
+    {
+      "nome": "Amigo Pet",
+      "url": "https://amigopet.dicasinteligentes.com",
+      "produtos": 30,
+      "comDefeitoDeclarado": 30,
+      "precoMenor": 17,
+      "precoMaior": 419,
+      "notaMedia": 4.51,
+      "notaMenor": 4.0,
+      "notaMaior": 4.9,
+      "avaliacoes": 48875
+    },
+    {
+      "nome": "Café Ideal",
+      "url": "https://cafe.dicasinteligentes.com",
+      "produtos": 29,
+      "comDefeitoDeclarado": 29,
+      "precoMenor": 23,
+      "precoMaior": 648,
+      "notaMedia": 4.57,
+      "notaMenor": 4.2,
+      "notaMaior": 5.0,
+      "avaliacoes": 83906
+    },
+    {
+      "nome": "Mundo Bebê",
+      "url": "https://mundobebe.dicasinteligentes.com",
+      "produtos": 28,
+      "comDefeitoDeclarado": 28,
+      "precoMenor": 60,
+      "precoMaior": 3150,
+      "notaMedia": 4.65,
+      "notaMenor": 3.2,
+      "notaMaior": 4.9,
+      "avaliacoes": 87980
+    }
+  ]
+}

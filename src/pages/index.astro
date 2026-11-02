@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import blog from '../data/blog.json';
+import rede from '../data/rede-numeros.json';
 
 // Posts com dado próprio da pesquisa, em destaque na home pra ajudar o Google a descobrir o blog.
 const slugsDestaque = [
@@ -12,6 +13,15 @@ const slugsDestaque = [
 const destaques = slugsDestaque
   .map((s) => blog.posts.find((p) => p.slug === s))
   .filter(Boolean);
+
+
+// Números contados nos dados publicados dos sites (scripts/gerar-numeros-rede.py).
+const fmt = (n) => n.toLocaleString('pt-BR');
+const reais = (n) => `R$ ${fmt(n)}`;
+const nota = (n) => n.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+const milhares = Math.round(rede.avaliacoes / 1000);
+const dataNumeros = rede.geradoEm.split('-').reverse().join('/');
+const pctAlta = Math.round((rede.de45ouMais / rede.produtos) * 100);
 
 const site = "https://dicasinteligentes.com";
 
@@ -35,7 +45,7 @@ const sites = [
   {
     nome: "Bela Receita",
     url: "https://belareceita.dicasinteligentes.com",
-    descricao: "Receitas fáceis e testadas, do dia a dia à ocasião especial.",
+    descricao: "Receitas fáceis, do dia a dia à ocasião especial.",
     cor: "#a12a2a",
     corFundo: "#faeaea",
     icone: '<path d="M11 3v6M8 3v6M14 3v6M8 9c0 2 1 3 3 3s3-1 3-3M11 12v9"/>',
@@ -113,6 +123,37 @@ const organizationSchema = {
     </div>
   </section>
 
+  <section class="numeros">
+    <h2>A rede em números</h2>
+    <p class="numeros-intro">
+      Contados nos dados publicados nos nossos sites. Atualizado em {dataNumeros}.
+    </p>
+    <ul class="numeros-destaques">
+      <li><strong>{rede.produtos}</strong><span>produtos pesquisados nos 4 sites de comparativo</span></li>
+      <li><strong>{rede.comDefeitoDeclarado} de {rede.produtos}</strong><span>com o defeito real declarado</span></li>
+      <li><strong>{milhares} mil</strong><span>avaliações de compradores somadas por trás das notas</span></li>
+      <li><strong>{rede.receitas}</strong><span>receitas passo a passo no Bela Receita</span></li>
+    </ul>
+    <div class="numeros-sites">
+      {rede.sites.map((s) => (
+        <a class="numeros-site" href={s.url} rel="noopener">
+          <strong>{s.nome}</strong>
+          <dl>
+            <div><dt>Produtos</dt><dd>{s.produtos}</dd></div>
+            <div><dt>Faixa de preço</dt><dd class="sem-quebra">{reais(s.precoMenor)} a {reais(s.precoMaior)}</dd></div>
+            <div><dt>Nota média</dt><dd>{nota(s.notaMedia)}</dd></div>
+            <div><dt>Menor nota</dt><dd>{nota(s.notaMenor)}</dd></div>
+          </dl>
+        </a>
+      ))}
+    </div>
+    <p class="numeros-leitura">
+      A nota média da rede é {nota(rede.notaMedia)}, e {pctAlta}% dos produtos têm 4,5 ou mais. Só {rede.abaixoDe4} ficam abaixo de 4.
+      Quando quase tudo tem nota alta, a nota sozinha não separa o bom do ruim.
+      Por isso cada produto mostra o defeito que os compradores mais citam.
+    </p>
+  </section>
+
   <section class="blog-destaque">
     <h2>No blog: o que aprendemos pesquisando</h2>
     <div class="blog-grade">
@@ -129,11 +170,16 @@ const organizationSchema = {
   <section class="metodo">
     <h2>Como trabalhamos</h2>
     <p>
-      Nenhum produto entra numa lista sem um defeito real, pesquisado em
-      avaliação de comprador de verdade. Nunca inventado. Preço é sempre
-      faixa, porque preço muda; nota só aparece quando existe avaliação de
-      verdade por trás dela. Não é sobre recomendar o produto mais caro, é
-      sobre mostrar o que realmente vale saber antes de comprar.
+      Não temos os produtos em mãos, e é melhor dizer isso logo. O que
+      fazemos é ler, produto por produto, as avaliações de quem comprou e
+      mostrar o que se repete, principalmente o defeito. Por isso nenhum
+      produto entra numa lista sem um problema real citado por compradores,
+      e nenhum defeito é inventado.
+    </p>
+    <p>
+      Preço é sempre faixa, porque muda toda hora. Nota só aparece quando
+      existe avaliação suficiente por trás dela. E não é sobre indicar o
+      mais caro: é sobre mostrar o que vale saber antes de comprar.
     </p>
     <p class="metodo-link"><a href="/metodo/">Veja o passo a passo completo da pesquisa →</a></p>
   </section>
@@ -198,6 +244,52 @@ const organizationSchema = {
       font-size: 1.1rem;
     }
     .site-card span { font-size: 0.9rem; color: var(--cor-texto-suave); }
+    .numeros { margin: 3rem 0 0; }
+    .numeros h2 { font-size: 1.25rem; margin: 0 0 0.5rem; text-align: center; }
+    .numeros-intro { text-align: center; color: var(--cor-texto-suave); font-size: 0.9rem; margin: 0 0 1.5rem; }
+    .numeros-destaques {
+      list-style: none;
+      margin: 0 0 1.5rem;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+    .numeros-destaques li {
+      border: 1px solid var(--cor-borda);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      text-align: center;
+    }
+    .numeros-destaques strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 1.7rem;
+      color: var(--cor-acento);
+      line-height: 1.15;
+      margin-bottom: 0.35rem;
+    }
+    .numeros-destaques span { font-size: 0.85rem; color: var(--cor-texto-suave); }
+    .numeros-sites {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .numeros-site {
+      display: block;
+      border: 1px solid var(--cor-borda);
+      border-radius: 14px;
+      padding: 1rem 1.2rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+    }
+    .numeros-site strong { display: block; font-family: Georgia, serif; margin-bottom: 0.6rem; }
+    .numeros-site dl { margin: 0; }
+    .numeros-site dl div { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.2rem 0; font-size: 0.88rem; }
+    .numeros-site dt { color: var(--cor-texto-suave); }
+    .numeros-site dd { margin: 0; font-weight: 700; text-align: right; }
+    .sem-quebra { white-space: nowrap; }
+    .numeros-leitura { max-width: 640px; margin: 1.5rem auto 0; text-align: center; color: var(--cor-texto-suave); font-size: 0.95rem; }
     .blog-destaque { margin: 2.5rem 0 0; }
     .blog-destaque h2 { font-size: 1.25rem; margin: 0 0 1.25rem; text-align: center; }
     .blog-grade {
@@ -224,7 +316,7 @@ const organizationSchema = {
       border-radius: 14px;
     }
     .metodo h2 { margin: 0 0 0.75rem; color: #fff; font-size: 1.2rem; }
-    .metodo p { margin: 0; color: #d8d5cb; font-size: 0.95rem; }
+    .metodo p { margin: 0 0 0.75rem; color: #d8d5cb; font-size: 0.95rem; }
     .metodo-link { margin-top: 0.9rem !important; }
     .metodo-link a { color: #fff; font-weight: 600; }
   </style>
